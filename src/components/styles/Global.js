@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
   html {
     --brand-primary100: #5D48A1;
     --brand-primary40: #8367E7;
@@ -34,11 +37,14 @@ export const GlobalStyle = createGlobalStyle`
     --space3: 3rem;
 
     --font-family-roboto: 'Roboto', sans-serif;
+    
+  }
+  body {
+    font-family: var(--font-family-roboto);
   }
   h2 {
     border-bottom: 1px solid var(--text-dark);
 		color: var(--text-dark);
-		font-family: var(--font-family-roboto);
     margin: 1rem 0;
 	}
 `;
