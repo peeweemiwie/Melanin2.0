@@ -15,10 +15,19 @@ export const LabelCheckbox = styled.label`
 			position: absolute;
 		}
 	}
-	svg {
-		font-size: 1.5rem;
-	}
-	span {
+	.wrapper-label {
 		font-size: var(--font-size-sm);
+	}
+	.wrapper-icon {
+		font-size: var(--font-size-sm);
+		&[data-toggle-state='true'] {
+			color: var(--accent-primary100);
+		}
+		&[data-toggle-state='false'] {
+			color: var(--gray60);
+		}
+		svg {
+			font-size: 1.5rem;
+		}
 	}
 `;

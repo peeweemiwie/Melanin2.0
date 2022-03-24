@@ -1,4 +1,5 @@
 import InputTextGroup from '../components/InputText';
+import { Card } from '../components/styles/Card.styled';
 
 export default {
 	title: 'Form/Input Text',
@@ -6,10 +7,10 @@ export default {
 };
 
 const Template = args => (
-	<div>
+	<Card>
 		<h2>Create a text input</h2>
 		<InputTextGroup {...args} />
-	</div>
+	</Card>
 );
 
 export const CreateATextInput = Template.bind({});

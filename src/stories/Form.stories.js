@@ -1,8 +1,8 @@
-import Form from '../components/Form';
+import LeftNav from '../components/LeftNav';
 
 export default {
-	title: 'Form/Form',
-	component: Form,
+	title: 'Form/LeftNav',
+	component: LeftNav,
 };
 
-export const LeftNavForm = () => <Form></Form>;
+export const LeftNavForm = () => <LeftNav />;

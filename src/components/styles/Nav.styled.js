@@ -23,8 +23,8 @@ const StyledNav = styled.nav`
 					height: 3px;
 					width: 100%;
 					display: block;
-					background-color: var(--accent-primary40);
-					bottom: -3px;
+					background-color: var(--accent-warning100);
+					bottom: -5px;
 					left: 0;
 				}
 			}

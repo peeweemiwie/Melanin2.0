@@ -44,17 +44,24 @@ export const GlobalStyle = createGlobalStyle`
     --font-size-xl: 2rem;
 
     --font-family-roboto: 'Roboto', sans-serif;
+    --font-family-source-sans: 'Source Sans Pro', sans-serif;
+    --font-family-ubuntu-mono: 'Ubuntu Mono', monospace;
+    --font-family-quicksand: 'Quicksand', sans-serif;
+
     --page-background: var(--gray0);
   }
+
   @media (prefers-color-scheme: dark) {
     html {
       --page-background: var(--gray100);
     }
   }
   body {
-    font-family: var(--font-family-roboto);
-    
+    font-family: var(--font-family-source-sans);
+    margin: 0;
+    padding: 0;
   }
+  
   h2 {
     border-bottom: 1px solid var(--text-dark);
 		color: var(--text-dark);

@@ -24,7 +24,7 @@ const InputTextGroup = ({
 	let svg = '';
 	if (inputIcon === 'search') svg = <MdSearch />;
 
-	let requireIcon = required ? <span>*</span> : '';
+	let requireIcon = required ? <span className='wrapper-required'>*</span> : '';
 
 	let messageIcon = '';
 	if (messageType === 'danger') {
@@ -72,6 +72,6 @@ InputTextGroup.propTypes = {
 	type: PropTypes.oneOf(['text', 'search']),
 	required: PropTypes.bool,
 	message: PropTypes.string,
-	messageType: PropTypes.oneOf(['danger', 'warning', 'success']),
+	messageType: PropTypes.oneOf(['none', 'danger', 'warning', 'success']),
 };
 export default InputTextGroup;

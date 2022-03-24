@@ -14,6 +14,7 @@ const Button = ({
 	textDecoration,
 	iconStart,
 	iconEnd,
+	hover = 'shadow',
 	handleClick,
 }) => {
 	let startIcon = '';
@@ -35,6 +36,7 @@ const Button = ({
 			color={color}
 			display={display}
 			textDecoration={textDecoration}
+			hover={hover}
 		>
 			{startIcon}
 			{label}
@@ -68,6 +70,7 @@ Button.propTypes = {
 	textDecoration: PropTypes.oneOf(['none', 'underline']),
 	iconEnd: PropTypes.oneOf(['none', 'arrow-up', 'arrow-down']),
 	iconStart: PropTypes.oneOf(['none', 'arrow-up', 'arrow-down']),
+	hover: PropTypes.oneOf(['none', 'shadow']),
 	handleClick: PropTypes.func,
 };
 

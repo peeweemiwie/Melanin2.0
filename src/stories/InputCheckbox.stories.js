@@ -1,4 +1,5 @@
 import InputCheckbox from '../components/InputCheckbox';
+import { Card } from '../components/styles/Card.styled';
 
 export default {
 	title: 'Form / Input Checkbox',
@@ -6,12 +7,12 @@ export default {
 };
 
 const Template = args => (
-	<div>
+	<Card>
 		<h2>Create a checkbox input</h2>
 		<section style={{ width: 'min(100%, 300px)' }}>
 			<InputCheckbox {...args} />
 		</section>
-	</div>
+	</Card>
 );
 
 export const CreateACheckbox = Template.bind({});

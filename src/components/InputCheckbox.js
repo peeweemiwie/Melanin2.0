@@ -7,10 +7,12 @@ const InputCheckbox = ({ label, toggle, id }) => {
 	const toggleOn = <BsToggle2On />;
 	const toggleOff = <BsToggle2Off />;
 	const [icon, setIcon] = useState(toggleOff);
+	const [toggleState, setToggleState] = useState(false);
 
 	const handleClick = e => {
 		const isChecked = e.target.checked;
 		isChecked ? setIcon(toggleOn) : setIcon(toggleOff);
+		isChecked ? setToggleState(true) : setToggleState(false);
 	};
 
 	return (
@@ -22,8 +24,12 @@ const InputCheckbox = ({ label, toggle, id }) => {
 				onClick={e => handleClick(e)}
 				data-toggle={toggle}
 			/>
-			<span>{label}</span>
-			{toggle && icon}
+			<span className='wrapper-label'>{label}</span>
+			{toggle && (
+				<span className='wrapper-icon' data-toggle-state={toggleState}>
+					{icon}
+				</span>
+			)}
 		</LabelCheckbox>
 	);
 };

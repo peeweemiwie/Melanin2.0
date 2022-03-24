@@ -12,7 +12,12 @@ export default {
 	component: Button,
 };
 
-const Template = args => <Button {...args} />;
+const Template = args => (
+	<Card>
+		<h2>Create a button</h2>
+		<Button {...args} />
+	</Card>
+);
 
 export const CreateAButton = Template.bind({});
 CreateAButton.args = {
@@ -20,6 +25,7 @@ CreateAButton.args = {
 	label: 'Create a button',
 	size: 'md',
 	color: 'light',
+	hover: 'shadow',
 };
 
 export const FilledButtons = () => (

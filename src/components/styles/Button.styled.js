@@ -17,6 +17,7 @@ export const Btn = styled.button`
 	cursor: pointer;
 	display: flex;
 	padding: 0.8em 1em;
+	transition: box-shadow 0.3s ease-in-out;
 
 	${({ bg }) => bg === 'primary' && `background-color: ${colorNames.primary}`};
 	${({ bg }) =>
@@ -60,7 +61,12 @@ export const Btn = styled.button`
 	${({ display }) => display === 'block' && 'display: block; width: 100%'};
 
 	${({ textDecoration }) =>
-		textDecoration === 'underline' && 'text-decoration: underline'}
+		textDecoration === 'underline' && 'text-decoration: underline'};
+
+	&:hover {
+		${({ hover }) =>
+			hover === 'shadow' && `box-shadow: 5px 5px 5px rgba(0,0,0, 0.3)`}
+	}
 `;
 
 export const BtnFilled = styled(Btn)`

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Card } from './Card.styled';
 
 export const CardColor = styled.div`
 	align-items: center;
@@ -7,7 +8,7 @@ export const CardColor = styled.div`
 	color: var(--text-dark);
 	column-gap: 0.5rem;
 	display: flex;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--font-family--roboto);
 	padding: 1rem;
 	width: min(100% - 2rem, 30rem);
 	.swatch {
@@ -24,7 +25,7 @@ export const CardColor = styled.div`
 	}
 `;
 
-export const ContainerColors = styled.div`
+export const ContainerColors = styled(Card)`
 	display: flex;
 	flex-direction: column;
 	row-gap: 1rem;

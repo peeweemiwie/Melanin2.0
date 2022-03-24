@@ -4,6 +4,7 @@ export const LeftNavFormStyled = styled.div`
 	background-color: var(--gray20);
 	grid-area: leftNav;
 	padding: var(--space1);
+	padding-top: 6rem;
 `;
 
 export const InputIconWrapperStyled = styled.div`
@@ -16,12 +17,16 @@ export const InputIconWrapperStyled = styled.div`
 `;
 
 export const LabelStyled = styled.label`
+	align-items: center;
 	color: var(--text-dark);
 	column-gap: 0.5em;
 	display: flex;
 	font-size: var(--font-size-sm);
-	span {
+	.wrapper-required {
 		color: var(--accent-warning100);
+		font-size: var(--font-size-md);
+		line-height: 0;
+		margin-left: -6px;
 	}
 `;
 
@@ -45,7 +50,7 @@ export const MessageContainer = styled.p`
 export const InputTextStyled = styled.input`
 	border: 1px solid var(--gray60);
 	border-radius: 4px;
-	padding: 0.2rem;
+	padding: 0.3rem;
 	&.danger {
 		border-color: var(--accent-danger100);
 	}
@@ -54,5 +59,8 @@ export const InputTextStyled = styled.input`
 	}
 	&.success {
 		border-color: var(--accent-success100);
+	}
+	&::placeholder {
+		color: var(--gray80);
 	}
 `;

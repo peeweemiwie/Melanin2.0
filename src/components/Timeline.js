@@ -51,7 +51,8 @@ const Timeline = () => {
 								<table>
 									{row.tr.map(item => (
 										<tr>
-											<td>{item.key}</td> <td>{item.val}</td>
+											<td className='inner-table-key'>{item.key}</td>
+											<td className='inner-table-value'>{item.val}</td>
 										</tr>
 									))}
 								</table>
