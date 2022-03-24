@@ -1,5 +1,7 @@
 import { Btn } from './styles/Button.styled';
 import PropTypes from 'prop-types';
+import { MdExpandLess } from 'react-icons/md';
+import { MdExpandMore } from 'react-icons/md';
 
 const Button = ({
 	bg,
@@ -10,8 +12,20 @@ const Button = ({
 	size,
 	display,
 	textDecoration,
+	iconStart,
+	iconEnd,
 	handleClick,
 }) => {
+	let startIcon = '';
+	let endIcon = '';
+	if (iconStart === '') startIcon = '';
+	else if (iconStart === 'arrow-up') startIcon = <MdExpandLess />;
+	else if (iconStart === 'arrow-down') startIcon = <MdExpandMore />;
+
+	if (iconEnd === '') startIcon = '';
+	if (iconEnd === 'arrow-up') endIcon = <MdExpandLess />;
+	else if (iconEnd === 'arrow-down') endIcon = <MdExpandMore />;
+
 	return (
 		<Btn
 			bg={bg}
@@ -22,7 +36,9 @@ const Button = ({
 			display={display}
 			textDecoration={textDecoration}
 		>
+			{startIcon}
 			{label}
+			{endIcon}
 		</Btn>
 	);
 };
@@ -50,6 +66,8 @@ Button.propTypes = {
 	borderRadius: PropTypes.oneOf(['none', 'sm', 'md', 'lg']),
 	display: PropTypes.oneOf(['inline', 'block']),
 	textDecoration: PropTypes.oneOf(['none', 'underline']),
+	iconEnd: PropTypes.oneOf(['none', 'arrow-up', 'arrow-down']),
+	iconStart: PropTypes.oneOf(['none', 'arrow-up', 'arrow-down']),
 	handleClick: PropTypes.func,
 };
 

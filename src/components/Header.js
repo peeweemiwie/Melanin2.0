@@ -1,6 +1,7 @@
 import StyledHeader from './styles/Header.styled';
 import Nav from './Nav';
-import { default as logo } from '../img/logo-white.svg';
+import { default as logo } from '../img/logo-cota-white.svg';
+
 const Header = () => {
 	return (
 		<StyledHeader>

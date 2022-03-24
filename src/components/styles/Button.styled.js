@@ -11,9 +11,13 @@ const colorNames = {
 };
 
 export const Btn = styled.button`
-	cursor: pointer;
+	align-items: center;
 	border: 1px solid transparent;
-	padding: 0.3em 1em;
+	column-gap: 0.5rem;
+	cursor: pointer;
+	display: flex;
+	padding: 0.8em 1em;
+
 	${({ bg }) => bg === 'primary' && `background-color: ${colorNames.primary}`};
 	${({ bg }) =>
 		bg === 'secondary' && `background-color: ${colorNames.secondary}`};
@@ -43,9 +47,9 @@ export const Btn = styled.button`
 	${({ color }) => color === 'warning' && `color: ${colorNames.warning}`};
 	${({ color }) => color === 'success' && `color: ${colorNames.success}`};
 
-	${({ size }) => size === 'sm' && 'font-size: 1rem'};
-	${({ size }) => size === 'md' && 'font-size: 1.2rem'};
-	${({ size }) => size === 'lg' && 'font-size: 1.6rem'};
+	${({ size }) => size === 'sm' && 'font-size: .8rem'};
+	${({ size }) => size === 'md' && 'font-size: 1rem'};
+	${({ size }) => size === 'lg' && 'font-size: 1.2rem'};
 
 	${({ borderRadius }) => borderRadius === 'none' && 'border-radius: 0'};
 	${({ borderRadius }) => borderRadius === 'sm' && 'border-radius: .4rem'};

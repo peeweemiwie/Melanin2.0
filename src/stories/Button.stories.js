@@ -2,6 +2,7 @@ import Button from '../components/Button';
 import {
 	arrayFilledButton,
 	arrayBorderedButton,
+	arrayIconButton,
 } from '../components/ButtonValues';
 import { Card } from '../components/styles/Card.styled';
 import { FlexWrapper } from '../components/styles/Wrappers.styled';
@@ -90,6 +91,26 @@ export const BlockButtons = () => (
 					color={btn.color}
 					display='block'
 					textDecoration='none'
+				/>
+			))}
+		</FlexWrapper>
+	</Card>
+);
+
+export const ButtonIcons = () => (
+	<Card>
+		<h2>Button - Icons</h2>
+		<FlexWrapper flexDirection='row' columnGap='1rem'>
+			{arrayIconButton.map(btn => (
+				<Button
+					bg={btn.bg}
+					borderColor={btn.borderColor}
+					label={btn.label}
+					borderRadius={btn.borderRadius}
+					size={btn.size}
+					color={btn.color}
+					iconStart={btn.iconStart}
+					iconEnd={btn.iconEnd}
 				/>
 			))}
 		</FlexWrapper>

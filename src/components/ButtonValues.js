@@ -1,3 +1,24 @@
+export const arrayIconButton = [
+	{
+		bg: 'primary',
+		borderColor: 'primary',
+		label: 'primary',
+		borderRadius: 'md',
+		size: 'md',
+		color: 'light',
+		iconStart: 'arrow-up',
+	},
+	{
+		bg: 'secondary',
+		borderColor: 'secondary',
+		label: 'secondary',
+		borderRadius: 'md',
+		size: 'md',
+		color: 'light',
+		iconEnd: 'arrow-down',
+	},
+];
+
 export const arrayFilledButton = [
 	{
 		bg: 'primary',

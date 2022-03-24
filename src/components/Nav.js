@@ -16,7 +16,12 @@ const Nav = () => {
 			</ul>
 			<ul>
 				<li>
-					<Button>designsystem@oncota.com</Button>
+					<Button
+						bg='transparent'
+						color='light'
+						label='designsystem@oncota.com'
+						iconEnd='arrow-down'
+					></Button>
 				</li>
 			</ul>
 		</StyledNav>

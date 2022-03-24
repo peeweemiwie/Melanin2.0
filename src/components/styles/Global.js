@@ -36,11 +36,24 @@ export const GlobalStyle = createGlobalStyle`
     --space2: 2rem;
     --space3: 3rem;
 
+    --font-size-xs: .6rem;
+    --font-size-sm: .8rem;
+    --font-size-normal: 1rem;
+    --font-size-md: 1.2rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+
     --font-family-roboto: 'Roboto', sans-serif;
-    
+    --page-background: var(--gray0);
+  }
+  @media (prefers-color-scheme: dark) {
+    html {
+      --page-background: var(--gray100);
+    }
   }
   body {
     font-family: var(--font-family-roboto);
+    
   }
   h2 {
     border-bottom: 1px solid var(--text-dark);
