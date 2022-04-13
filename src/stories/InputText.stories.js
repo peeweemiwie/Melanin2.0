@@ -15,11 +15,11 @@ const Template = args => (
 
 export const CreateATextInput = Template.bind({});
 CreateATextInput.args = {
-	label: 'This is a required text input',
-	inputIcon: 'search',
+	label: 'Email Address',
+	inputIcon: 'none',
 	type: 'text',
-	message: 'Success!!!',
-	messageType: 'success',
+	message: 'Please enter valid email address',
+	messageType: 'danger',
 	required: true,
 	placeholder: 'Placeholder',
 };

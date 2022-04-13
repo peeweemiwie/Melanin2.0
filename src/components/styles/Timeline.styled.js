@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const TimelineStyled = styled.div`
 	grid-area: timeline;
 	padding-top: 6rem;
+	background-color: var(--gray0);
 `;
 
 export const OutlineStyled = styled.div`

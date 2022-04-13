@@ -48,7 +48,7 @@ export const FilledButtons = () => (
 
 export const BorderedButtons = () => (
 	<Card>
-		<h2>Button - Bordered</h2>
+		<h2>Button - Outlined</h2>
 		<FlexWrapper flexDirection='row' columnGap='1rem'>
 			{arrayBorderedButton.map(btn => (
 				<Button

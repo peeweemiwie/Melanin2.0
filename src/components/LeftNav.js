@@ -19,6 +19,7 @@ const LeftNav = () => {
 					color='light'
 					label='Export Timeline'
 					size='sm'
+					display='block'
 				/>
 			</CardLight>
 			<CardLight>
@@ -43,6 +44,7 @@ const LeftNav = () => {
 					color='light'
 					label='Complete Abstraction'
 					size='sm'
+					display='block'
 				/>
 			</CardLight>
 		</LeftNavFormStyled>
